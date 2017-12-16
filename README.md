@@ -250,7 +250,7 @@ We need to do a few more things in order to display this view. Add the following
 var App = require('./views/app')
 
 var app = new App()
-$(document.body).html(app.render({ appName: 'Todo App' }))
+$(document.body).html(app.render({ appName: 'Todo App' }).el)
 ```
 
 Lastly, replace the contents of index.html with the following.
